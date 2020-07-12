@@ -1,4 +1,14 @@
-# Moves the files to the PI Vision extensibility folder
+<# 
+.SYNOPSIS
+Moves the custom symbol to the PI Vision extensibility folder, only works on the PI Vision machine
+
+.DESCRIPTION
+Automates the deployment of this custom sybmol for use in testing
+
+.EXAMPLE
+PS C:\Sample> .\deploy.ps1
+
+#>
 
 $pihome = $env:PIHOME64
 $symbolFolder = $pihome + "PIVision\Scripts\app\editor\symbols\ext"
